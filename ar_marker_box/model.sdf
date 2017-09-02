@@ -2,21 +2,20 @@
 <sdf version="1.4">
   <model name="AR Marker Box">
     <link name="ar_marker_box_link">
+      <pose>0 0 0.05 0 0 0</pose>
       <inertial>
-        <pose>0.0 0.0 0.07 0 0 0</pose>
         <mass>0.07</mass>
         <inertia>
-          <ixx>0.00047877</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <izz>0.00004288</izz>
-          <iyz>0</iyz>
-          <iyy>0.00047877</iyy>
+          <ixx>0.00011667</ixx>
+          <ixy>0.0</ixy>
+          <ixz>0.0</ixz>
+          <iyy>0.00011667</iyy>
+          <iyz>0.0</iyz>
+          <izz>0.00011667</izz>
         </inertia>
       </inertial>
 
       <visual name="ar_marker_box_visual">
-        <pose>0 0 0 0 0 3.1415</pose>
         <geometry>
           <mesh>
             <uri>model://ar_marker_box/meshes/ar_marker_box.dae</uri>
@@ -26,11 +25,10 @@
 
 
       <collision name="ar_marker_box_collision">
-        <pose>0 0 0 0 0 3.1415</pose>
         <geometry>
-          <mesh>
-            <uri>model://ar_marker_box/meshes/ar_marker_box.dae</uri>
-          </mesh>
+          <box>
+            <size>0.1 0.1 0.1</size>
+          </box>
         </geometry>
         <!-- <surface> -->
 <!--           <friction>
